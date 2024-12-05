@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout3</title>
+        <meta charset="utf-8" />
+        <style>
+            #warp{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0 auto;
+            }
+            header h1{
+                font-size: 40px;
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                font-size: 12px;
+            }
+            header li{
+               padding-right: 20px;
+            }
+            .short_line{
+                width: 25px;
+                border-top: solid 1px black;
+            }
+            #content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content_card{
+                width: 310px;
+                background-color: white;
+                box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.445);
+                margin: 20px;
+            }
+            .content_card div h2{
+                margin-top: 0;
+            }
+            .content_card>div:last-child{
+                padding: 25px;
+            }
+            .content_card>div:first-child{
+                position: relative;
+            }
+            .content_card img{
+               display: block;
+            }
+            .content_card>div:last-child>div:nth-child(2){
+                color: gray;
+            }
+            .category{
+                background-color: black;
+                color: white;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            body{
+                background-image: url(img3/back.png);
+            }
+            .long_line{
+                border-top: dotted 1px gray;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0;
+            }
+            footer ul li{
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="warp">
+            <header>
+                <h1>Gridly.</h1>
+                <div class="short_line"></div>
+                <ul>
+                    <li>home</li>
+                    <li>digital design</li>
+                    <li>web design</li>
+                </ul>
+                <div class="short_line"></div>
+            </header>
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card1.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card2.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card3.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card4.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card5.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card6.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card7.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card8.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card9.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card10.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3/card11.png" alt="">
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class="short_line"></div>
+                <ul>
+                    <li><img src="img3/icon1.png"></li>
+                    <li><img src="img3/icon2.png"></li>
+                    <li><img src="img3/icon3.png"></li>
+                    <li><img src="img3/icon4.png"></li>
+                </ul>
+                <div class="short_line"></div>
+                <p>copyright</p>
+            </footer>
+        </div>
+    </body>
+</html>
