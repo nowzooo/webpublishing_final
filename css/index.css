@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Passion+One&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif; text-align: center; background-color: #F6F6F6;}
+.container{ width: 1720px; margin: 0 auto;}
+.clearfix::after{content: ''; display: block; clear: both;}
+
+.logo{
+    margin-top: 200px;
+}
+.logo h1{
+    font-size: 300px;
+    color: #EE3D3D;
+    font-family: 'Passion One', sans-serif;
+}
+
+.toll_menu{
+    margin-top: 100px;
+}
+.toll_menu nav ul li{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(53, 53, 53);
+}
+.toll_menu nav ul li:hover{
+    color: #EE3D3D;
+}
+footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 80px;
+    background-color: #EE3D3D;
+    padding: 20px 0 0 0;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    color: #F6F6F6;
+    padding-top: 10px;
+}
+footer p:first-child{
+    font-size: 20px;
+    font-family: 'Passion One', sans-serif;
+}

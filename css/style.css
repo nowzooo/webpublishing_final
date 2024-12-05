@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{position: relative; width: 1700px; margin: 0 auto;}
+
+body{
+    background: #111111;
+}
+
+/*header*/
+#header{position: fixed; left: 0; top: 0; z-index: 100; width: 100%; background: #111;
+    padding-bottom: 20px;}
+
+
+/* logo */
+#header .container .logo{
+    position: absolute; 
+    left: 0; top: 30px; 
+    font-size: 30px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: orangered;
+}
+
+/*h_top*/
+#header .container .h_top{
+    margin: 0 auto;
+}    
+
+#header .container #nav{width: 100%; padding-top: 40px; }
+#header .container #nav .gnb{width: 100%; text-align: right; } 
+#header .container #nav .gnb>li{ 
+        position: relative; display: inline-block; margin-right: 130px; text-align: center;
+}
+#header .container #nav .gnb>li>a{ 
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        border-bottom: 2px solid none;
+}
+    
+#nav .gnb li .line::after {margin-top: 2px; transition: 0.4s; content: ''; display: block; width: 15px; height: 2px; background: #111;}
+#nav .gnb li:hover .line::after {width: 100%; background: orangered;}    
+
+/*swiper*/
+.visual{
+    margin-top: 250px;
+    text-align: center;
+    font-weight: bolder;
+}
+.visual .visual-wrapper li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    color: orangered;
+    font-style: italic;
+}
+.visual .visual-wrapper li a img{
+    margin-top: 20px;
+    height: 300px;
+}
+.visual .visual-wrapper li .visual_text{
+    margin-top: 20px;
+}
+.visual .visual-wrapper li a p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/*con1*/
+.con1{
+    z-index: 1;
+    position: relative;
+    background: orangered;
+    width: 100%; height: 900px;
+    margin-top: 200px;
+}
+.con1 .con1_text{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    display: block;
+    padding: 50px 0;
+}
+.con1 video{
+    z-index: 3;
+    position: relative;
+    padding-left: 320px;
+    margin-bottom: 200px;
+}
+.con1 p{
+    z-index: 2;
+    position: absolute;
+    font-size: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #111;
+    bottom: -30px;
+    left: 15px;
+}
+
+/*con2*/
+
+/* new */
+.tour_item{padding-top: 100px;}
+.tour_txt h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px; font-weight: 700;
+    color: orangered; 
+    line-height: 20px;
+    margin-left: 720px;
+
+}
+
+.tour_item ul li{
+    float: left; margin: 0 10px;
+    box-sizing: border-box; border: 1px solid orangered;
+    height: 550px;
+    background-color: #fff;
+}
+.tour_item ul li div{ width: 400px; margin: 0 auto; overflow: hidden;}
+.tour_item ul li a{background-color: #fff; }
+.tour_item ul li a>.img_box{background-color: orangered; }
+.tour_item ul li a>.img_box>img{display: block; width: 400px;}
+.tour_item ul li a>.img_box:hover img{transform: scale(1.2);  transition: all 0.2s linear;}
+.tour_item ul li a strong{
+    display: block; text-align: left;
+    padding: 20px; padding-bottom: 0;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 600; font-size: 15px;
+    color: #313131;
+}
+
+.tour_item ul li a p{
+    display: block; text-align: left;
+    padding: 0 20px; padding-top: 10px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 400; font-size: 13px;
+    color: #313131;
+}
+
+.tour_item ul li a span{
+    display: block; text-align: left;
+    padding: 0 20px; padding-top: 30px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 500; font-size: 17px;
+    color: #313131;
+    line-height: 20px;
+}
+
+.n_btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; font-weight: 700;
+    color: #fff; 
+    background: orangered;
+    border-radius: 20px; border: none;
+    margin-left: 770px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+}
+.n_btn:hover{
+    border: 1px solid orangered;
+    background-color: #111;
+}
+
+/* 라이브 상세 */
+.live_txt{
+    text-align: center;
+}
+.live_txt h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px; font-weight: 700;
+    color: orangered; 
+    line-height: 20px;
+    padding-bottom: 60px;
+
+}
+.live_list{
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+tr { 
+    display: block; 
+    display: inline-block;
+}
+th{
+    display:block;
+    color: orangered;
+    width: 360px;
+}
+td{
+    display:block;
+    color: #fff;
+    width: 360px;
+}
+.btn_w{
+    width: 180px;
+}
+.live_btn{
+    width: 80px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; font-weight: 700;
+    color: #fff; 
+    background: orangered;
+    border-radius: 10px; border: none;
+    margin-left: 50px;
+}
+.live_btn:hover{
+    border: 1px solid orangered;
+    background-color: #111;
+}
+
+
+.email_txt{
+    text-align: center;
+}
+.email_txt h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px; font-weight: 700;
+    color: orangered; 
+    line-height: 40px;
+    padding-bottom: 60px;
+
+}
+#email{
+    margin-left: 600px;
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+}
+.email_btn{
+    font-size: 18px;
+    font-weight: 900;
+    color: orangered; 
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 50px;
+}
+
+footer{
+    width: 100%;
+    background-color: orangered;
+}
+.f_logo{
+   text-align: center;
+   padding-top: 30px;
+}
+.f_logo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px; font-weight: bolder;
+    color: #131313; 
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+.f_sns{
+   padding-left: 870px;
+   padding-bottom: 50px;
+}
+.f_sns li{
+   float: left;
+   padding-left: 20px;
+}
+.f_sns li img{
+    width: 30px;
+}
+
+.f_sns li img:hover{
+    transform: scaleY(-1); transition: .5s;
+}

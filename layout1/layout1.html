@@ -1,0 +1,239 @@
+<!DOCTYPE html> <!--문서유형-->
+<html>
+    <head> <!--머릿말-->
+        <title>layout1</title>
+        <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
+        <meta name="keywords" content="" />
+        <style>
+            #wrap ul{}
+            header ul{}
+            #wrap>header>ul{}
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0 auto;
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                margin: 13px 0px;
+            }
+            header li{
+                padding: 0 10px;
+                border-right: solid 1px gray;
+            }
+            header li:last-child{
+               border: none;
+            }
+            header{
+                padding: 5px 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+            header h1{
+                margin: 0;
+            }
+            header>div>img{
+                margin: 13px 0px;
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+            }
+            nav li{
+                padding: 0 10px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                background-color: lightgray;
+                padding: 5xp 50px;
+            }
+            nav h2{
+                margin: 14px 0;
+            }
+            #content>section:nth-child(1){
+                background-color: #98f;
+            }
+            #content>section:nth-child(2){
+                background-color: #5d9;
+            }
+            #content>section:nth-child(3){
+                background-color: #f76;
+            }
+            #content>section:nth-child(4){
+                background-color: #ec5;
+            }
+            #content>section>div{
+                display: flex;
+                justify-content: center;
+            }
+            #content>section>div>div{
+                margin: 0 10px;
+            }
+            #content dt{
+                font-weight: bold;
+            }
+            #content dd{
+                margin: 0;
+            }
+            h3{
+                margin: 0;
+                margin-bottom: 30px;
+                color: white;
+                font-weight: normal;
+            }
+            section{
+                padding: 50px;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                padding: 50px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0;
+            }
+            footer li{
+                padding: 0 5px;
+            }
+            footer div:first-child li{
+                padding: 0 5px;
+                border-right: solid 1px lightgray;
+            }
+            footer div:first-child li:last-child{
+                border-right: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1><img src="img/logo.png" alt=""></h1>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                </ul>
+                <div><img src="img/zoom.png" alt=""></div>
+            </header>
+            <nav>
+                <h2>See Our Works</h2>
+                <ul>
+                    <li>web design</li>
+                    <li>icons</li>
+                    <li>web design</li>
+                    <li>web design</li>
+                </ul>
+                <div></div>
+            </nav>
+            <div id="content">
+                <section>
+                    <h3>Web design</h3>
+                    <div>
+                        <div>
+                            <img src="img/img1.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/img2.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3>
+                    <div>
+                        <div>
+                            <img src="img/img3.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/img4.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3>
+                    <div>
+                        <div>
+                            <img src="img/img5.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/img6.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3>
+                    <div>
+                        <div>
+                            <img src="img/img7.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/img8.png" alt="">
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div>
+                    <ul>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>services</li>
+                        <li>work</li>
+                    </ul>
+                    <p>copyright</p>
+                    <p>discription</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="img/icon1.png"/></li>
+                        <li><img src="img/icon2.png"/></li>
+                        <li><img src="img/icon3.png"/></li>
+                        <li><img src="img/icon4.png"/></li>
+                        <li><img src="img/icon5.png"/></li>
+                        <li><img src="img/icon6.png"/></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

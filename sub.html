@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!--문서유형-->
+<html>
+    <head> <!--머릿말-->
+        <title>한현주의 자유 홈페이지</title>
+        <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+
+    <body> <!--본문-->
+        <header id="header">
+            <div class="container">
+                <div class="h_top">
+                    <h1 class="logo">
+                        5sos
+                    </h1>
+                </div> <!-- .h_top -->
+            </div> <!-- .container -->
+            <div class="container clearfix">
+                <nav id="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">5sos</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">live</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">music</a>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">video</a>
+                            <div class="line"></div>
+                        </li> 
+                    </ul> <!--gnb-->
+                </nav> <!--nav-->
+              </div> <!--container-->
+        </header>
+
+        <main>
+            <section class="visual">
+                <ul class="visual-wrapper">
+                    <li>
+                        <a href="#">
+                            <h1>
+                                5 second of summer
+                            </h1>
+                            <img src="img/channels4_profile.jpg" alt="">
+                            <div class="visual_text">
+                                <p>5 SUMMER OF SUMMER</p>
+                                <p>The Feeling of Falling Upwards – Live From The Royal Albert Hall, Out Everywhere</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="con1 container">
+                <div class="con1_text">
+                    <h1>
+                        5sos music
+                    </h1>
+                </div>
+                <p>
+                   5 SECOND OF SUMMER
+                </p>
+                <video controls autoplay muted>
+                    <source src="mp4/5 Seconds of Summer - COMPLETE MESS (Official Music Video).mp4" type="video/mp4"/>
+                </video>
+            </div>
+
+            <section class="tour_item container">
+                <div class="tour_txt">
+                    <h1>TOUR ARRIVAL</h1>
+                </div><!-- .tour_txt -->
+                <ul class="tour_item">
+                    <li>
+                        <a href="https://tourstore.5sos.com/collections/all/products/white-tour-hoodie">
+                        <div class="img_box">  
+                            <img src="img/5SOS_TourECRUHoodie_fb.webp" alt="">
+                        </div>
+                        <strong>5SOS TOUR HOODIE</strong>
+                        <p>HOODIE</p>
+                        <span>27,000</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tourstore.5sos.com/collections/all/products/5sos-longsleeve">
+                            <div class="img_box">  
+                                <img src="img/5SOS_CreamLS_fb.webp" alt="">
+                            </div>
+                            <strong>5SOS LONGSLEEVE</strong>
+                            <p>LONGSLEEVE</p>
+                            <span>$55.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tourstore.5sos.com/collections/all/products/5sos-faded-black-pullover-hoodie">
+                            <div class="img_box">  
+                                <img src="img/5SOS_FadedBlack_tee.webp" alt="">
+                            </div>
+                            <strong>I GOT SAUCED BLACK TEE</strong>
+                            <p>TEE</p>
+                            <span>$45.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tourstore.5sos.com/collections/all/products/checkered-bucket-hat">
+                            <div class="img_box">  
+                                <img src="img/5SOS_bucket_hat.webp" alt="">
+                            </div>
+                            <strong>CHECKERED BUCKET HAT</strong>
+                            <p>BUCKET HAT</p>
+                            <span>$35.00</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="n_btn">MORE</button>
+            </section>
+
+            <section class="live container">
+                <div class="live_txt">
+                    <h1>LIVE</h1>
+                </div>
+                <table class="live_list">
+                    <tr>
+                        <th> Sat, OCT 21 </th>
+                        <th> Sun, OCT 22 </th>
+                    </tr>
+                    <tr>
+                        <td> When We Were Young 2023</td>
+                        <td> When We Were Young 2023</td>
+                    </tr>
+                    <tr>
+                        <td> Las Vegas, NV </td>
+                        <td> Las Vegas, NV </td>
+                    </tr>
+                    <tr>
+                        <td class="btn_w"><button class="live_btn">ticket</button></td>
+                        <td class="btn_w"><button class="live_btn">ticket</button></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="email container">
+                <div class="email_txt">
+                    <h1>FIRST ACCESS TO <br/> NEW TOUR DATES</h1>
+                </div>
+                <label for="email">
+                    <input
+                           type="email" 
+                           id="email"
+                           pattern=".+@gmail\.com"
+                           placeholder="example@gmail.com"
+                           required>
+                           <button class="email_btn" onclick="alert('이메일을 입력해주세요.');" >JOIN</button>
+                  </label>
+            </section>
+        </main>
+
+        <footer>
+            <div class="f_logo">
+                <h1>
+                    5sos
+                </h1>
+            </div>
+            <div class="f_sns_w  clearfix">
+                <ul class="f_sns">
+                    <li>
+                        <img src="img/instagram.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/facebook.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>

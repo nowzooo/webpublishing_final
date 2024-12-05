@@ -1,0 +1,208 @@
+<!DOCTYPE html> <!--문서유형-->
+<html>
+    <head> <!--머릿말-->
+        <title>한현주의 홈페이지</title>
+        <meta charset="utf-8" /> <!-- utf-8, euc-kr -->
+        <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <style>
+            body{
+                color:brown;
+            }
+        </style>
+    </head>
+    <body> <!--본문-->
+        <a href="sub.html" target="_blank">서브페이지</a>
+        <a href="https://www.naver.com/">네이버</a>
+        <a href="https://cafe.naver.com/kwdmd" target="_blank">계원디미디카페</a>
+
+        <img width="500px" height="auto" src="https://yt3.googleusercontent.com/q29soJ-kZbSH4Od95BECTN8MUpSmm7aqd-QuM37035MauCLLwWPpC9bGNmlkwHPH1qcM_E9psw=s900-c-k-c0x00ffffff-no-rj" />
+        <img width="500px" height="auto" src="img/channels4_profile.jpg" />
+
+        <a href="https://www.youtube.com/channel/UC-vKwDHcbPLtjml81ohGRng">
+            오소스<img width="500px" height="auto" src="img/channels4_profile.jpg" />
+        </a>
+        
+        <시작태그>
+        </종료태그>
+        <독립형태그/>
+        
+        <시작태그 속성="값">내용<종료태그/>
+        <독립형태그 속성="값"/>
+
+        <h1>영국</h1>
+            <h2>퀸</h2>
+                <h3>프레디 머큐리</h3>
+                <h3>브라이언 메이</h3>
+            <h2>비틀즈</h2>
+                <h3>존레논</h3>          
+        <h1>호주</h1>
+        <h1>미국</h1>
+            
+        <p>단어가 모여서 문장, 문장이 모여서 문단
+            한가지 주제를 가지고 있는 문장의 집합
+        </p>
+        HTML은      띄어쓰기, <br />
+        줄바꿈은 무시한다.
+        <hr />
+
+        <strong>강한 강조</strong>
+        <em>강조</em>
+        <!--의미를 부여함 (사용권장)-->
+
+        <b>굵은 글씨</b>
+        <i>기울임</i>
+        <!--모양을 부여함 (사용 비권장)-->
+
+        <ins>추가 글</ins>
+        <del>삭제 글</del>
+        <!--의미를 부여-->
+
+        <u>밑줄</u>
+        <strike>가운데 줄</strike>
+        <!--모양을 부여-->
+
+        윗첨자<sup>추가되는 설명을 위에 표시</sup>
+        아랫첨자<sub>추가되는 설명을 아래에 표시</sub>
+
+        <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ul>
+        <ol>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </ol>
+        <dl>
+            <dt>용어</dt>
+            <dd>용어에 대한 설명</dd>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+        </dl>
+
+        <style>
+            th, td{
+                border: solid 1px black;
+            }
+        </style>
+        <table summary="table기초">
+            <caption>테이블 기초</caption>
+            <tr> <!--table row 행 줄-->
+                <th scope="col" rowspan="2">제목1</th> <!-- table header -->
+                <th scope="col" colspan="2">제목2</th> <!-- colum 열 칸 -->
+                <th scope="col">제목3</th> <!--  colum 열 칸 -->
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <thead>표제목</thead>
+            <tbody>표본문</tbody>
+            <tfoot>표끝</tfoot>
+        </table>
+
+        <div>블록형 구획 나누기</div>
+        <span>인라인형 구획 나누기</span>
+        <span>인라인형 구획 나누기</span>
+        <span>인라인형 구획 나누기</span>
+        <!-- 의미 없이 사용하기 좋은 태그 -->
+
+        <form>
+            <label for="name_1">아이디</label>
+            <input name="name_1" type="text" placeholder="-기호없이 숫자만 입력" />
+            <input type="password" />
+
+            <input type="radio" name="p1" checked /> 사과
+            <input type="radio" name="p1" /> 배
+            <input type="radio" name="p1" /> 딸기
+
+            <input type="checkbox" /> 가을
+            <input type="checkbox" /> 겨울
+            <input type="checkbox" /> 봄
+
+            <select> <!-- select box, combo box-->
+                <option>네이버</option>
+                <option>구글</option>
+                <option>계원</option>
+            </select>
+
+            <textarea cols="60" rows="10">내용</textarea>
+
+            <input onclick="alert('버튼클릭');" type="button" value="버튼입니다">
+            <button>
+                <strong>
+                    <del>
+                        버튼입니다
+                    </del>
+                </strong>
+            </button>
+
+            <input type="submit" value="제출" />
+        </form>
+
+        <section><!--같은 주제를 가지고 있는 내용의 모임-->
+            <h1>구획1 제목</h1>
+            구획1 제목
+        </section>
+        <nav><!--네비게이션, 페이지 이동 버튼 모임-->
+            <ul>
+                <li><a href="링크주소">링크버튼</a></li>
+                <li><a href="링크주소">링크버튼</a></li>
+            </ul>
+            <a href="링크주소">링크버튼</a>
+        </nav>
+        <article><!--연관성이 다소 적은 내용의 모임-->
+            <h1>기사 제목</h1>
+            기사 내용
+        </article>
+        <aside><!--연관성이 아예 없는 내용의 모임-->
+            <h1>광고 제목</h1>
+            광고내용
+        </aside>
+        
+        <header></header><!--본문(body) 내의 서론-->
+        <footer></footer><!--본문(body) 내의 결론-->
+
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            //get element by id
+            //id 기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#ff0000";
+
+            ctx.fillRect(25, 25, 100, 100); //채움사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+            
+            ctx.fillStyle = "#000000";
+            ctx.beginPath(); //선그리기 시작
+            ctx.moveTo(65, 75); //펜 들어 움직이기
+            ctx.lineTo(90, 95); //선 그으며 움직이기
+            ctx.lineTo(90, 55);
+            ctx.fill(); //내부 채우기
+            
+            ctx.beginPath();
+            ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+            ctx.moveTo(260, 75);
+            ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(215, 65);
+            ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(245, 65);
+            ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+        </script>
+
+        <audio controls>
+            <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+        </audio>
+        <video controls>
+            <source src="mp4/file_example_MP4_480_1_5MG (1).mp4" type="video/mp4" />
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BKMRnLC91qY?si=LU5VfKp5g_Tcu6V1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+</html>
+

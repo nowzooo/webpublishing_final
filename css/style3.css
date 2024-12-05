@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.clearfix::after{content: ''; display: block; clear: both;}
+.container{position: relative; width: 1700px; margin: 0 auto;}
+
+/*header*/
+.logo{
+    padding-top: 100px;
+    text-align: center;
+}
+.logo>h1{ 
+        font-family: "Sawarabi Mincho";
+        font-size: 110px; /* 크기를 20px로 설정 */
+        margin-bottom: 10px; /* 서브 메뉴와 제목 간격을 조절 */
+        margin-top: 20px; /* 제목과 상단 간격을 조정 */
+        font-weight: bold;
+}
+.logo>h2{ 
+    padding-top: 50px;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+header{
+    padding-bottom: 20px;
+}
+
+/*nav*/
+.nav{
+    width: 60%;
+    margin: 0 auto;
+}
+.nav .gnb{width: 100%;padding-top: 50px;}
+.nav .gnb>li{
+    width: 15%;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    line-height: 40px;
+    background-color: #eaf2ff;
+}
+.nav .gnb>li:hover{
+    background-color: #94bfff;
+}
+.nav .gnb>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #464648;
+    transition: all .5s;
+}
+.nav .gnb .submenu{
+    background: #cbefff;
+    display: none;
+} 
+.nav .gnb .submenu{
+    position: absolute; 
+    left: 0; top: 43px; 
+    z-index: 10; 
+    width: 143px; 
+    padding: 15px 5px; 
+}
+.nav .gnb .submenu li a{
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+}
+.nav .gnb .submenu li a:hover{
+    color: #fff;
+}
